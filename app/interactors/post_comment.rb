@@ -3,7 +3,7 @@ class PostComment
 
   def call
     success = post_comment!
-    contex.fail!(error: 'Something went wrong') unless success
+    context.fail!(error: 'Something went wrong') unless success
   end
 
   private
