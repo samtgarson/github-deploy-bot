@@ -1,7 +1,4 @@
 class DeploysController < ApplicationController
-  include ActionController::HttpAuthentication::Basic::ControllerMethods
-  http_basic_authenticate_with name: ENV['BASIC_AUTH_USER'], password: ENV['BASIC_AUTH_PASSWORD']
-
   def create
     head 200 and return if result.success?
     render json: result.errors, status: 500
@@ -10,7 +7,7 @@ class DeploysController < ApplicationController
   private
 
     def result
-      @result ||= PostComment.call(deploy_params)
+      @result ||= ProcessDeployment.call(deploy_params)
     end
 
     def deploy_params

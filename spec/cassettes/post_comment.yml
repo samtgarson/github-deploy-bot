@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.github.com/repos/samtgarson/github-deploy-bot/issues/1/comments
+    body:
+      encoding: UTF-8
+      string: '{"body":"**Deployed to:**\nhttp://google.com"}'
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.6.2
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic Z2l0aHViLWRlcGxveS1ib3Q6enJhYXp5OTYyMQ==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Mon, 19 Dec 2016 12:16:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1387'
+      Status:
+      - 201 Created
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4997'
+      X-Ratelimit-Reset:
+      - '1482152790'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - '"1b6d197d6c26f7abc5ddaf47bca122f6"'
+      Location:
+      - https://api.github.com/repos/samtgarson/github-deploy-bot/issues/comments/267950803
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 474556b853193c38f1b14328ce2d1b7d
+      X-Github-Request-Id:
+      - 059487DE:56CA:5E982E4:5857CF9B
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://api.github.com/repos/samtgarson/github-deploy-bot/issues/comments/267950803","html_url":"https://github.com/samtgarson/github-deploy-bot/pull/1#issuecomment-267950803","issue_url":"https://api.github.com/repos/samtgarson/github-deploy-bot/issues/1","id":267950803,"user":{"login":"github-deploy-bot","id":24650275,"avatar_url":"https://avatars.githubusercontent.com/u/24650275?v=3","gravatar_id":"","url":"https://api.github.com/users/github-deploy-bot","html_url":"https://github.com/github-deploy-bot","followers_url":"https://api.github.com/users/github-deploy-bot/followers","following_url":"https://api.github.com/users/github-deploy-bot/following{/other_user}","gists_url":"https://api.github.com/users/github-deploy-bot/gists{/gist_id}","starred_url":"https://api.github.com/users/github-deploy-bot/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/github-deploy-bot/subscriptions","organizations_url":"https://api.github.com/users/github-deploy-bot/orgs","repos_url":"https://api.github.com/users/github-deploy-bot/repos","events_url":"https://api.github.com/users/github-deploy-bot/events{/privacy}","received_events_url":"https://api.github.com/users/github-deploy-bot/received_events","type":"User","site_admin":false},"created_at":"2016-12-19T12:16:27Z","updated_at":"2016-12-19T12:16:27Z","body":"**Deployed
+        to:**\nhttp://google.com"}'
+    http_version: 
+  recorded_at: Mon, 19 Dec 2016 12:16:27 GMT
+recorded_with: VCR 3.0.3
