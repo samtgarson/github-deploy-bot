@@ -55,6 +55,10 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    interactor (3.1.0)
+    interactor-rails (2.0.2)
+      interactor (~> 3.0)
+      rails (>= 3, < 5.1)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -133,6 +137,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv-rails
+  interactor-rails
   octokit
   pry-byebug
   pry-rails
