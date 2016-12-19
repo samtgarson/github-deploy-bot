@@ -1,24 +1,7 @@
-# README
+# Github Deploy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Get your branch url posted on your PR
 
-Things you may want to cover:
+A bot to post the url from your automated CI deployment to your Pull request.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+wIP
